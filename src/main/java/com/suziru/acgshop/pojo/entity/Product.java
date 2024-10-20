@@ -13,6 +13,7 @@ import java.util.List;
 @TableName("t_product")
 @Data
 public class Product implements Serializable {
+
     private Integer id;
     private String name;
     private BigDecimal price;
@@ -24,7 +25,7 @@ public class Product implements Serializable {
     private  Integer swiperSort=0;
     private String swiperPic="default.jpg";
     private String description;//描述
-    //@JsonSerialize(using=CustomDateTimeSerializer.class)
+
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Data hotDateTime;
 
